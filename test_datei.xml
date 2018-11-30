@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="OCR-D_GT_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="Unbenannt6.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<groundtruth>
+    <label lev1="production-method" lev2="machine" lev3="architecture"/>
+</groundtruth>
