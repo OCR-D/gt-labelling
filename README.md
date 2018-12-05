@@ -7,7 +7,8 @@ https://github.com/PRImA-Research-Lab/semantic-labelling
 
 # What can you do?
 
-## Transform the spezification of Ontology and framework for semantic labelling of document data and software methods to Schema
+## Transform 
+the spezification of Ontology and framework for semantic labelling of document data and software methods to XSD Schema
 
 ```sh
 java -jar ../saxon9he.jar -xsl:OCR-D_GT_labelschema_maker.xsl -s:DefaultLabelTypes_3.xml
