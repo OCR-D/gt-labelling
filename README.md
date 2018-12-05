@@ -25,7 +25,7 @@ xmlns:gt="http://www.ocr-d.de/GT/"
 The XSD Schema Location
 
 ```xml
-xsi:schemaLocation="http://www.ocr-d.de/GT/ OCR-D_GT_schema.xsd
+xsi:schemaLocation="http://www.ocr-d.de/GT/ OCR-D_GT_schema.xsd"
 ```
 METS Example
 see: mets_example.xml
