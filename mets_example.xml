@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- This METS file was created on Tue Aug 18 14:49:03 CEST 2015 using the UGH Metadata Library: ugh.fileformats.mets.MetsModsImportExport (version 1.9-20100505) -->
 <mets:mets
     xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd
-    http://www.ocr-d.de/GT/ OCR-D_GT_schema2.xsd"
+    http://www.ocr-d.de/GT/ OCR-D_GT_schema.xsd"
     xmlns:mets="http://www.loc.gov/METS/" 
     xmlns:gt="http://www.ocr-d.de/GT/"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -89,12 +88,22 @@
                     <gt:fptr FILEID="FILE_0006_MAX"/>
                 </gt:label>
                 <gt:label type="condition/wear/additions/informative/stamps">
-                    <gt:fptr FILEID="FILE_0006_MAX"/>
+                    <gt:fptr FILEID="FILE_0006_MAX">
+                        <gt:area COORDS="224,1485 489,1485 489,1622 224,1622" SHAPE="POLY"/>
+                    </gt:fptr>
                 </gt:label>
-                <gt:label type="">
+                <gt:label type="data-attributes/document-related/visual/text/font/typeface/blackletter">
+                    <gt:fptr FILEID="FILE_0006_MAX"/>
                     <gt:fptr FILEID="FILE_0008_MAX"/>
-                </gt:label> 
-                 
+                </gt:label>
+                <gt:label type="data-attributes/document-related/visual/text/font/multi-font/font-sizes">
+                    <gt:fptr FILEID="FILE_0006_MAX"/>
+                    <gt:fptr FILEID="FILE_0008_MAX"/>
+                </gt:label>
+                <gt:label type="data-attributes/document-related/visual/text/font/multi-font/typefaces">
+                    <gt:fptr FILEID="FILE_0006_MAX"/>
+                    <gt:fptr FILEID="FILE_0008_MAX"/>
+                </gt:label>
             </mets:xmlData>
         </mets:mdWrap>
     </mets:dmdSec> 

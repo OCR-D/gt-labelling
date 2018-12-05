@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema xmlns="http://www.ocr-d.de/GT/" xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.ocr-d.de/GT/"
-   elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xsd:schema xmlns="http://www.ocr-d.de/GT/"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://www.ocr-d.de/GT/"
+            elementFormDefault="qualified"
+            attributeFormDefault="unqualified">
    <xsd:import namespace="http://www.w3.org/1999/xlink"
-      schemaLocation="http://www.loc.gov/standards/xlink/xlink.xsd"/>
+               schemaLocation="http://www.loc.gov/standards/xlink/xlink.xsd"/>
    <xsd:element name="label">
       <xsd:complexType>
          <xsd:sequence>
             <xsd:element name="fptr" maxOccurs="unbounded">
                <xsd:complexType>
                   <xsd:sequence>
-                     <xsd:element name="area">
+                     <xsd:element name="area" minOccurs="0">
                         <xsd:complexType>
-                           <xsd:attribute name="COORDS" type="xsd:string" use="optional"/>
+                           <xsd:attribute name="COORDS" type="xsd:string" use="required"/>
                            <xsd:attribute name="SHAPE">
                               <xsd:simpleType>
                                  <xsd:restriction base="xsd:string">
@@ -414,8 +417,7 @@ Table recognition
 Map reading</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="activityDomain/computing/visual/analysisRecognition/text/ocr">
+                  <xsd:enumeration value="activityDomain/computing/visual/analysisRecognition/text/ocr">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Optical character recognition (optical character reader, OCR) is the mechanical or electronic conversion of images of typed, handwritten or printed text into machine-encoded text, whether from a scanned document, a photo of a document, a scene-photo (for example the text on signs and billboards in a landscape photo) or from subtitle text superimposed on an image (for example from a television broadcast).
 
@@ -427,8 +429,7 @@ Mathematical equation recognition
 Map reading</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="activityDomain/computing/visual/analysisRecognition/text/maths">
+                  <xsd:enumeration value="activityDomain/computing/visual/analysisRecognition/text/maths">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Specialised recognition of mathematical equations / formulas.
 
@@ -439,8 +440,7 @@ Related:
 OCR</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="activityDomain/computing/visual/analysisRecognition/text/date">
+                  <xsd:enumeration value="activityDomain/computing/visual/analysisRecognition/text/date">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Specialised recognition of dates and times
 
@@ -451,8 +451,7 @@ Related:
 OCR</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="activityDomain/computing/visual/analysisRecognition/tables">
+                  <xsd:enumeration value="activityDomain/computing/visual/analysisRecognition/tables">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">The recognition of table/form structure and/or contents. 
 
@@ -465,8 +464,7 @@ OCR
 Object / shape recognition (e.g. table separator detection)</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="activityDomain/computing/visual/analysisRecognition/charts">
+                  <xsd:enumeration value="activityDomain/computing/visual/analysisRecognition/charts">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Recognition or analysis of data charts.
 
@@ -508,8 +506,7 @@ Text and symbol recognition
 Forensic studies</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="activityDomain/computing/visual/analysisRecognition/shape/face">
+                  <xsd:enumeration value="activityDomain/computing/visual/analysisRecognition/shape/face">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">A facial recognition system is a computer application capable of identifying or verifying a person from a digital image or a video frame from a video source. One of the ways to do this is by comparing selected facial features from the image and a facial database.
 
@@ -520,8 +517,7 @@ Related:
 Machine learning (separate category)</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="activityDomain/computing/visual/analysisRecognition/layoutAnalysis">
+                  <xsd:enumeration value="activityDomain/computing/visual/analysisRecognition/layoutAnalysis">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">In computer vision, document layout analysis is the process of identifying and categorizing the regions of interest in the scanned image of a text document. A reading system requires the segmentation of text zones from non-textual ones and the arrangement in their correct reading order.
 
@@ -568,8 +564,7 @@ Related:
 OCR</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="activityDomain/computing/text/naturalLanguage/identification">
+                  <xsd:enumeration value="activityDomain/computing/text/naturalLanguage/identification">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">In natural language processing, language identification or language guessing is the problem of determining which natural language given content is in.
 
@@ -602,8 +597,7 @@ Related:
 Sentiment mining</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="activityDomain/computing/text/naturalLanguage/partOfSpeech">
+                  <xsd:enumeration value="activityDomain/computing/text/naturalLanguage/partOfSpeech">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">In corpus linguistics, part-of-speech tagging (POS tagging or POST), also called grammatical tagging or word-category disambiguation, is the process of marking up a word in a text (corpus) as corresponding to a particular part of speech, based on both its definition and its context—i.e., its relationship with adjacent and related words in a phrase, sentence, or paragraph.
 
@@ -615,8 +609,7 @@ Named entitiy recognition,
 Tokenisation (as part of Data creation / transformation)</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="activityDomain/computing/text/naturalLanguage/namedEntities">
+                  <xsd:enumeration value="activityDomain/computing/text/naturalLanguage/namedEntities">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Named-entity recognition (NER) (also known as entity identification, entity chunking and entity extraction) is a subtask of information extraction that seeks to locate and classify named entities in text into pre-defined categories such as the names of persons, organizations, locations, expressions of times, quantities, monetary values, percentages, etc.
 
@@ -1398,44 +1391,37 @@ Book</xsd:documentation>
                         <xsd:documentation xml:lang="en">Document-related charactersitics</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="condition/production-related/document-characteristics/pasted-clippings">
+                  <xsd:enumeration value="condition/production-related/document-characteristics/pasted-clippings">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Paper clippings pasted onto a page</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="condition/production-related/document-characteristics/textured-paper">
+                  <xsd:enumeration value="condition/production-related/document-characteristics/textured-paper">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Paper with a visible texture</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="condition/production-related/document-characteristics/uneven-character-spacing">
+                  <xsd:enumeration value="condition/production-related/document-characteristics/uneven-character-spacing">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Intra-word and inter-word character spacing is not uniform</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="condition/production-related/document-characteristics/narrow-border">
+                  <xsd:enumeration value="condition/production-related/document-characteristics/narrow-border">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">The content of a page reaches very close to the page border or even touches it</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="condition/production-related/document-characteristics/low-contrast">
+                  <xsd:enumeration value="condition/production-related/document-characteristics/low-contrast">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">The contrast bwtween the paper and the page content is very low</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="condition/production-related/document-characteristics/halftoning">
+                  <xsd:enumeration value="condition/production-related/document-characteristics/halftoning">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Dot-based halftoning printing technique was used (to emulate more colours / grey tones)</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="condition/production-related/document-characteristics/dithering">
+                  <xsd:enumeration value="condition/production-related/document-characteristics/dithering">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Dithering printing technique was used (added randomness to avoid unwanted patterns)</xsd:documentation>
                      </xsd:annotation>
@@ -1445,14 +1431,12 @@ Book</xsd:documentation>
                         <xsd:documentation xml:lang="en">Fault introduced during document production</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="condition/production-related/document-faults/bleed-through">
+                  <xsd:enumeration value="condition/production-related/document-faults/bleed-through">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Ink bled through from back of page</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="condition/production-related/document-faults/ink-from-facing">
+                  <xsd:enumeration value="condition/production-related/document-faults/ink-from-facing">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Ink from facing page was transferred to this page</xsd:documentation>
                      </xsd:annotation>
@@ -1462,38 +1446,32 @@ Book</xsd:documentation>
                         <xsd:documentation xml:lang="en">Ink was smeared after printing / writing</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="condition/production-related/document-faults/touching-chars">
+                  <xsd:enumeration value="condition/production-related/document-faults/touching-chars">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Independent characters are touching due to printing issues</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="condition/production-related/document-faults/touching-chars/horizontally">
+                  <xsd:enumeration value="condition/production-related/document-faults/touching-chars/horizontally">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Neighbouring characters within one text line are touching</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="condition/production-related/document-faults/touching-chars/vertically">
+                  <xsd:enumeration value="condition/production-related/document-faults/touching-chars/vertically">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Characters from neighbouring text lines are touching each other</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="condition/production-related/document-faults/uneven-ink-distrib">
+                  <xsd:enumeration value="condition/production-related/document-faults/uneven-ink-distrib">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">The ink was not distributed properly during printing, leading to unwanted empty or faint regions</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="condition/production-related/document-faults/filled-in-chars">
+                  <xsd:enumeration value="condition/production-related/document-faults/filled-in-chars">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Gaps or holes in characters are filled in (e.g. due to too much ink)</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="condition/production-related/document-faults/sort-shoulder-artefacts">
+                  <xsd:enumeration value="condition/production-related/document-faults/sort-shoulder-artefacts">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Sort shoulder parts touched the paper during printing, leading to visible artefacts around characters</xsd:documentation>
                      </xsd:annotation>
@@ -1508,14 +1486,12 @@ Book</xsd:documentation>
                         <xsd:documentation xml:lang="en">Faint individual characters, e.g. when not using enough force during typewriting </xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="condition/production-related/document-faults/blurred-chars">
+                  <xsd:enumeration value="condition/production-related/document-faults/blurred-chars">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Blurred characters due to production issues</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="condition/production-related/document-faults/non-straight-text-lines">
+                  <xsd:enumeration value="condition/production-related/document-faults/non-straight-text-lines">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Text lines were not printed straight (printing issue / limitation)</xsd:documentation>
                      </xsd:annotation>
@@ -1707,8 +1683,7 @@ Book</xsd:documentation>
                         <xsd:documentation xml:lang="en">Content- or background-related issues</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="condition/acquisition/content-or-background/incomplete-capture">
+                  <xsd:enumeration value="condition/acquisition/content-or-background/incomplete-capture">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Not the whole content was captured during acquisition or copying</xsd:documentation>
                      </xsd:annotation>
@@ -1718,44 +1693,37 @@ Book</xsd:documentation>
                         <xsd:documentation xml:lang="en">Tight / narrow margins</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="condition/acquisition/content-or-background/included-objects">
+                  <xsd:enumeration value="condition/acquisition/content-or-background/included-objects">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Foreign objects visible</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="condition/acquisition/content-or-background/included-objects/preceeding-or-proceeding">
+                  <xsd:enumeration value="condition/acquisition/content-or-background/included-objects/preceeding-or-proceeding">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Part of preceeding or succeeding object included (e.g. other page)</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="condition/acquisition/content-or-background/included-objects/medium-structure">
+                  <xsd:enumeration value="condition/acquisition/content-or-background/included-objects/medium-structure">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Medium structure visible (e.g. book cover)</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="condition/acquisition/content-or-background/included-objects/clips">
+                  <xsd:enumeration value="condition/acquisition/content-or-background/included-objects/clips">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Paper clips visible</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="condition/acquisition/content-or-background/included-objects/fingers">
+                  <xsd:enumeration value="condition/acquisition/content-or-background/included-objects/fingers">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Fingers visible</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="condition/acquisition/content-or-background/included-objects/insects">
+                  <xsd:enumeration value="condition/acquisition/content-or-background/included-objects/insects">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Insects visible</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="condition/acquisition/content-or-background/included-objects/background">
+                  <xsd:enumeration value="condition/acquisition/content-or-background/included-objects/background">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Unwanted background visible (e.g. scanner bed)</xsd:documentation>
                      </xsd:annotation>
@@ -1775,14 +1743,12 @@ Book</xsd:documentation>
                         <xsd:documentation xml:lang="en">Parts of other page showing through (e.g. due to thin paper)</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="condition/acquisition/method-flaws/imaging/uneven-illumination">
+                  <xsd:enumeration value="condition/acquisition/method-flaws/imaging/uneven-illumination">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Uneven illumination leading to brightness or contrast variations</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="condition/acquisition/method-flaws/imaging/uneven-illumination/shadows">
+                  <xsd:enumeration value="condition/acquisition/method-flaws/imaging/uneven-illumination/shadows">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Shadows visible</xsd:documentation>
                      </xsd:annotation>
@@ -1797,14 +1763,12 @@ Book</xsd:documentation>
                         <xsd:documentation xml:lang="en">Low image contrast</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="condition/acquisition/method-flaws/imaging/missing-content">
+                  <xsd:enumeration value="condition/acquisition/method-flaws/imaging/missing-content">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Some of the original content is missing or changed</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="condition/acquisition/method-flaws/imaging/missing-content/thresholding">
+                  <xsd:enumeration value="condition/acquisition/method-flaws/imaging/missing-content/thresholding">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Content or information loss due to thresholding / binaristaion</xsd:documentation>
                      </xsd:annotation>
@@ -1855,8 +1819,7 @@ Book</xsd:documentation>
                         <xsd:documentation xml:lang="en">Latin script</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="data-attributes/document-related/visual/text/script/braille">
+                  <xsd:enumeration value="data-attributes/document-related/visual/text/script/braille">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Braille script</xsd:documentation>
                      </xsd:annotation>
@@ -1871,74 +1834,62 @@ Book</xsd:documentation>
                         <xsd:documentation xml:lang="en">Cursive font (italics or handwritten)</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="data-attributes/document-related/visual/text/font/monospace">
+                  <xsd:enumeration value="data-attributes/document-related/visual/text/font/monospace">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Monospace font (all characters have the same width)</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="data-attributes/document-related/visual/text/font/typeface">
+                  <xsd:enumeration value="data-attributes/document-related/visual/text/font/typeface">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">General typeface or hand</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="data-attributes/document-related/visual/text/font/typeface/blackletter">
+                  <xsd:enumeration value="data-attributes/document-related/visual/text/font/typeface/blackletter">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Blackletter, gothic, Fraktur</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="data-attributes/document-related/visual/text/font/typeface/antiqua">
+                  <xsd:enumeration value="data-attributes/document-related/visual/text/font/typeface/antiqua">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Antiqua font (more modern)</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="data-attributes/document-related/visual/text/font/typeface/manuscript">
+                  <xsd:enumeration value="data-attributes/document-related/visual/text/font/typeface/manuscript">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Print-like manuscript font</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="data-attributes/document-related/visual/text/font/decorated">
+                  <xsd:enumeration value="data-attributes/document-related/visual/text/font/decorated">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Text decorations to highlight or beautify</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="data-attributes/document-related/visual/text/font/decorated/flourishes">
+                  <xsd:enumeration value="data-attributes/document-related/visual/text/font/decorated/flourishes">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Flourishes added to the characters</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="data-attributes/document-related/visual/text/font/decorated/multi-colour">
+                  <xsd:enumeration value="data-attributes/document-related/visual/text/font/decorated/multi-colour">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Multiple colours used for text (e.g. in one text line)</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="data-attributes/document-related/visual/text/font/decorated/reverse-video">
+                  <xsd:enumeration value="data-attributes/document-related/visual/text/font/decorated/reverse-video">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Dark background, bright text colour</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="data-attributes/document-related/visual/text/font/multi-font">
+                  <xsd:enumeration value="data-attributes/document-related/visual/text/font/multi-font">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Multiple fonts used</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="data-attributes/document-related/visual/text/font/multi-font/typefaces">
+                  <xsd:enumeration value="data-attributes/document-related/visual/text/font/multi-font/typefaces">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">More than one typeface used</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="data-attributes/document-related/visual/text/font/multi-font/font-sizes">
+                  <xsd:enumeration value="data-attributes/document-related/visual/text/font/multi-font/font-sizes">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">More than one font size used</xsd:documentation>
                      </xsd:annotation>
@@ -1973,20 +1924,17 @@ Book</xsd:documentation>
                         <xsd:documentation xml:lang="en">Some content is rotated with respect to other content</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="data-attributes/document-related/visual/complex-background">
+                  <xsd:enumeration value="data-attributes/document-related/visual/complex-background">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Background not just plain white / colour</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="data-attributes/document-related/visual/complex-background/watermarks">
+                  <xsd:enumeration value="data-attributes/document-related/visual/complex-background/watermarks">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Watermark(s) in background</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="data-attributes/document-related/visual/complex-background/impressions">
+                  <xsd:enumeration value="data-attributes/document-related/visual/complex-background/impressions">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Impressions / embossings visible</xsd:documentation>
                      </xsd:annotation>
@@ -1996,8 +1944,7 @@ Book</xsd:documentation>
                         <xsd:documentation xml:lang="en">Illustrations in content</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="data-attributes/document-related/visual/illustrations/multi-colour">
+                  <xsd:enumeration value="data-attributes/document-related/visual/illustrations/multi-colour">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Multi-colour illustrations in content</xsd:documentation>
                      </xsd:annotation>
@@ -2007,8 +1954,7 @@ Book</xsd:documentation>
                         <xsd:documentation xml:lang="en">Decorations of some kind</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="data-attributes/document-related/visual/decorations/frames">
+                  <xsd:enumeration value="data-attributes/document-related/visual/decorations/frames">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Some content enclosed in frames or borders</xsd:documentation>
                      </xsd:annotation>
@@ -2028,8 +1974,7 @@ Book</xsd:documentation>
                         <xsd:documentation xml:lang="en">Document structure-related</xsd:documentation>
                      </xsd:annotation>
                   </xsd:enumeration>
-                  <xsd:enumeration
-                     value="data-attributes/document-related/structural/running-titles">
+                  <xsd:enumeration value="data-attributes/document-related/structural/running-titles">
                      <xsd:annotation>
                         <xsd:documentation xml:lang="en">Titles repeated each page</xsd:documentation>
                      </xsd:annotation>
