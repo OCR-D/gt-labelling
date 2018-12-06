@@ -22,7 +22,7 @@
 
     <xsl:template match="LabelTypeHierarchies">
         <xsl:element name="xsd:element">
-            <xsl:attribute name="name">label</xsl:attribute>
+            <xsl:attribute name="name">state</xsl:attribute>
             <xsl:element name="xsd:complexType">
                 <xsl:element name="xsd:sequence">
                     <xsl:element name="xsd:element">
@@ -67,7 +67,7 @@
                 </xsl:element>
                 </xsl:element>
                 <xsl:element name="xsd:attribute">
-                    <xsl:attribute name="name">type</xsl:attribute>
+                    <xsl:attribute name="name">prop</xsl:attribute>
                     <xsl:element name="xsd:simpleType">
                         <xsl:element name="xsd:restriction">
                             <xsl:attribute name="base">xsd:string</xsl:attribute>
