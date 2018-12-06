@@ -7,7 +7,7 @@
             attributeFormDefault="unqualified">
    <xsd:import namespace="http://www.w3.org/1999/xlink"
                schemaLocation="http://www.loc.gov/standards/xlink/xlink.xsd"/>
-   <xsd:element name="label">
+   <xsd:element name="state">
       <xsd:complexType>
          <xsd:sequence>
             <xsd:element name="fptr" maxOccurs="unbounded">
@@ -32,7 +32,7 @@
                </xsd:complexType>
             </xsd:element>
          </xsd:sequence>
-         <xsd:attribute name="type">
+         <xsd:attribute name="prop">
             <xsd:simpleType>
                <xsd:restriction base="xsd:string">
                   <xsd:enumeration value="age">
