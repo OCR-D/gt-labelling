@@ -3,6 +3,9 @@
     <xsl:output method="xml" indent="yes"/>
     <xsl:strip-space elements="*"/>
 
+    <xsl:param name="mets_schema">http://www.loc.gov/standards/mets/mets.xsd</xsl:param>
+    <xsl:variable name="mining_schema" select="document($mets_schema)"/>
+
     <xsl:template match="text()"/>
 
     <xsl:template match="Ontology">
@@ -28,19 +31,51 @@
                     <xsl:element name="xsd:element">
                         <xsl:attribute name="name">fptr</xsl:attribute>
                         <xsl:attribute name="maxOccurs">unbounded</xsl:attribute>
+                        <xsl:element name="xsd:annotation">
+                            <xsl:element name="xsd:documentation">
+                                <xsl:attribute name="xml:lang">en</xsl:attribute>
+                                <xsl:attribute name="source"><xsl:value-of select="$mets_schema"/></xsl:attribute>
+                                Citation (source http://www.loc.gov/standards/mets/mets.xsd):
+                                "<xsl:value-of select="$mining_schema//xsd:element[@name='fptr']/xsd:annotation/xsd:documentation"/>"
+                            </xsl:element>
+                        </xsl:element>
                         <xsl:element name="xsd:complexType">
                             <xsl:element name="xsd:sequence">
                                 <xsl:element name="xsd:element">
                                     <xsl:attribute name="name">area</xsl:attribute>
                                     <xsl:attribute name="minOccurs">0</xsl:attribute>
+                                    <xsl:element name="xsd:annotation">
+                                        <xsl:element name="xsd:documentation">
+                                            <xsl:attribute name="xml:lang">en</xsl:attribute>
+                                            <xsl:attribute name="source"><xsl:value-of select="$mets_schema"/></xsl:attribute>
+                                            Citation (source http://www.loc.gov/standards/mets/mets.xsd):
+                                            "<xsl:value-of select="$mining_schema//xsd:element[@name='area']/xsd:annotation/xsd:documentation"/>"
+                                        </xsl:element>
+                                    </xsl:element>
                                     <xsl:element name="xsd:complexType">
                                         <xsl:element name="xsd:attribute">
                                         <xsl:attribute name="name">COORDS</xsl:attribute>
                                         <xsl:attribute name="type">xsd:string</xsl:attribute>
                                         <xsl:attribute name="use">required</xsl:attribute>
+                                        <xsl:element name="xsd:annotation">
+                                        <xsl:element name="xsd:documentation">
+                                            <xsl:attribute name="xml:lang">en</xsl:attribute>
+                                            <xsl:attribute name="source"><xsl:value-of select="$mets_schema"/></xsl:attribute>
+                                            Citation (source http://www.loc.gov/standards/mets/mets.xsd):
+                                            "<xsl:value-of select="$mining_schema//xsd:attribute[@name='COORDS']/xsd:annotation/xsd:documentation"/>"
                                         </xsl:element>
+                                        </xsl:element>
+                                    </xsl:element>
                                         <xsl:element name="xsd:attribute">
                                         <xsl:attribute name="name">SHAPE</xsl:attribute>
+                                            <xsl:element name="xsd:annotation">
+                                                <xsl:element name="xsd:documentation">
+                                                    <xsl:attribute name="xml:lang">en</xsl:attribute>
+                                                    <xsl:attribute name="source"><xsl:value-of select="$mets_schema"/></xsl:attribute>
+                                                    Citation (source http://www.loc.gov/standards/mets/mets.xsd):
+                                                    "<xsl:value-of select="$mining_schema//xsd:attribute[@name='SHAPE']/xsd:annotation/xsd:documentation"/>"
+                                                </xsl:element>
+                                            </xsl:element>
                                         <xsl:element name="xsd:simpleType">
                                             <xsl:element name="xsd:restriction">
                                                 <xsl:attribute name="base">xsd:string</xsl:attribute>
@@ -62,6 +97,14 @@
                             <xsl:element name="xsd:attribute">
                                 <xsl:attribute name="name">FILEID</xsl:attribute>
                                 <xsl:attribute name="use">required</xsl:attribute>
+                            <xsl:element name="xsd:annotation">
+                                <xsl:element name="xsd:documentation">
+                                    <xsl:attribute name="xml:lang">en</xsl:attribute>
+                                    <xsl:attribute name="source"><xsl:value-of select="$mets_schema"/></xsl:attribute>
+                                    Citation (source http://www.loc.gov/standards/mets/mets.xsd):
+                                    "<xsl:value-of select="$mining_schema//xsd:attribute[@name='FILEID']/xsd:annotation/xsd:documentation"/>"
+                                </xsl:element>
+                                </xsl:element>
                             </xsl:element>
                     </xsl:element>
                 </xsl:element>
