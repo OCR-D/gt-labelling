@@ -20,7 +20,7 @@ xsi:schemaLocation="http://www.ocr-d.de/GT/OCR-D_GT_schema.xsd"
 
 ### METS Example
 
-See [`mets_example.xml`](./mets_example.xml).
+See [`mets_example.xml`](./example/mets_example.xml).
 
 ## Developer info
 
