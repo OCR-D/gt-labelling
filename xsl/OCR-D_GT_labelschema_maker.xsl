@@ -35,7 +35,7 @@
                             <xsl:element name="xsd:documentation">
                                 <xsl:attribute name="xml:lang">en</xsl:attribute>
                                 <xsl:attribute name="source"><xsl:value-of select="$mets_schema"/></xsl:attribute>
-                                Citation (source http://www.loc.gov/standards/mets/mets.xsd):
+                                Citation (source <xsl:value-of select="$mets_schema"/>):
                                 "<xsl:value-of select="$mining_schema//xsd:element[@name='fptr']/xsd:annotation/xsd:documentation"/>"
                             </xsl:element>
                         </xsl:element>
@@ -48,7 +48,7 @@
                                         <xsl:element name="xsd:documentation">
                                             <xsl:attribute name="xml:lang">en</xsl:attribute>
                                             <xsl:attribute name="source"><xsl:value-of select="$mets_schema"/></xsl:attribute>
-                                            Citation (source http://www.loc.gov/standards/mets/mets.xsd):
+                                            Citation (source <xsl:value-of select="$mets_schema"/>):
                                             "<xsl:value-of select="$mining_schema//xsd:element[@name='area']/xsd:annotation/xsd:documentation"/>"
                                         </xsl:element>
                                     </xsl:element>
@@ -61,7 +61,7 @@
                                         <xsl:element name="xsd:documentation">
                                             <xsl:attribute name="xml:lang">en</xsl:attribute>
                                             <xsl:attribute name="source"><xsl:value-of select="$mets_schema"/></xsl:attribute>
-                                            Citation (source http://www.loc.gov/standards/mets/mets.xsd):
+                                            Citation (source <xsl:value-of select="$mets_schema"/>):
                                             "<xsl:value-of select="$mining_schema//xsd:attribute[@name='COORDS']/xsd:annotation/xsd:documentation"/>"
                                         </xsl:element>
                                         </xsl:element>
@@ -72,7 +72,7 @@
                                                 <xsl:element name="xsd:documentation">
                                                     <xsl:attribute name="xml:lang">en</xsl:attribute>
                                                     <xsl:attribute name="source"><xsl:value-of select="$mets_schema"/></xsl:attribute>
-                                                    Citation (source http://www.loc.gov/standards/mets/mets.xsd):
+                                                    Citation (source <xsl:value-of select="$mets_schema"/>):
                                                     "<xsl:value-of select="$mining_schema//xsd:attribute[@name='SHAPE']/xsd:annotation/xsd:documentation"/>"
                                                 </xsl:element>
                                             </xsl:element>
@@ -101,7 +101,7 @@
                                 <xsl:element name="xsd:documentation">
                                     <xsl:attribute name="xml:lang">en</xsl:attribute>
                                     <xsl:attribute name="source"><xsl:value-of select="$mets_schema"/></xsl:attribute>
-                                    Citation (source http://www.loc.gov/standards/mets/mets.xsd):
+                                    Citation (source <xsl:value-of select="$mets_schema"/>):
                                     "<xsl:value-of select="$mining_schema//xsd:attribute[@name='FILEID']/xsd:annotation/xsd:documentation"/>"
                                 </xsl:element>
                                 </xsl:element>
