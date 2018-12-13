@@ -16,8 +16,6 @@
             xmlns:xsd="http://www.w3.org/2001/XMLSchema"
             elementFormDefault="qualified" 
             attributeFormDefault="unqualified">
-            <xsd:import namespace="http://www.w3.org/1999/xlink"
-                schemaLocation="http://www.loc.gov/standards/xlink/xlink.xsd"/>
             <xsl:apply-templates select="LabelTypeHierarchies"/>
         </xsd:schema>
     </xsl:template>
