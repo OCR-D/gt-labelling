@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mets:mets
     xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd
-    http://www.ocr-d.de/GT/ OCR-D_GT_schema.xsd"
+    http://www.ocr-d.de/GT/ file:///OCR-D_GT_schema.xsd"
     xmlns:mets="http://www.loc.gov/METS/" 
     xmlns:gt="http://www.ocr-d.de/GT/"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -72,38 +72,24 @@
     <mets:dmdSec ID="DMDGT_0001">
         <mets:mdWrap MDTYPE="OTHER">
             <mets:xmlData>
-                <gt:state prop="granularity/physical/document-related/page">
-                    <gt:fptr FILEID="FILE_0006_MAX"/>
-                </gt:state>
-                <gt:state prop="granularity/physical/document-related/region">
-                    <gt:fptr FILEID="FILE_0006_MAX"/>
-                </gt:state>
-                <gt:state prop="granularity/physical/document-related/text-line">
-                    <gt:fptr FILEID="FILE_0006_MAX"/>
-                </gt:state>
-                <gt:state prop="granularity/physical/document-related/word">
-                    <gt:fptr FILEID="FILE_0006_MAX"/>
-                </gt:state>
-                <gt:state prop="condition/production-related/document-faults/ink-from-facing">
-                    <gt:fptr FILEID="FILE_0006_MAX"/>
-                </gt:state>
-                <gt:state prop="condition/wear/additions/informative/stamps">
-                    <gt:fptr FILEID="FILE_0006_MAX">
-                        <gt:area COORDS="224,1485 489,1485 489,1622 224,1622" SHAPE="POLY"/>
-                    </gt:fptr>
-                </gt:state>
-                <gt:state prop="data-attributes/document-related/visual/text/font/typeface/blackletter">
-                    <gt:fptr FILEID="FILE_0006_MAX"/>
-                    <gt:fptr FILEID="FILE_0008_MAX"/>
-                </gt:state>
-                <gt:state prop="data-attributes/document-related/visual/text/font/multi-font/font-sizes">
-                    <gt:fptr FILEID="FILE_0006_MAX"/>
-                    <gt:fptr FILEID="FILE_0008_MAX"/>
-                </gt:state>
-                <gt:state prop="data-attributes/document-related/visual/text/font/multi-font/typefaces">
-                    <gt:fptr FILEID="FILE_0006_MAX"/>
-                    <gt:fptr FILEID="FILE_0008_MAX"/>
-                </gt:state>
+                <gt:state prop="granularity/physical/document-related/page"/>
+                <gt:state prop="granularity/physical/document-related/region"/>
+                <gt:state prop="granularity/physical/document-related/text-line"/>
+                <gt:state prop="granularity/physical/document-related/word"/>
+                <gt:state prop="condition/production-related/document-faults/ink-from-facing"/>
+                <gt:state prop="condition/wear/additions/informative/stamps"/>
+                <gt:state prop="data-attributes/document-related/visual/text/font/typeface/blackletter"/>
+                <gt:state prop="data-attributes/document-related/visual/text/font/multi-font/font-sizes"/>
+                <gt:state prop="data-attributes/document-related/visual/text/font/multi-font/typefaces"/>
+            </mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+    <mets:dmdSec ID="DMDGT_0002">
+        <mets:mdWrap MDTYPE="OTHER">
+            <mets:xmlData>
+                <gt:state prop="data-attributes/document-related/visual/text/font/typeface/blackletter"/>
+                <gt:state prop="data-attributes/document-related/visual/text/font/multi-font/font-sizes"/>
+                <gt:state prop="data-attributes/document-related/visual/text/font/multi-font/typefaces"/>
             </mets:xmlData>
         </mets:mdWrap>
     </mets:dmdSec> 
