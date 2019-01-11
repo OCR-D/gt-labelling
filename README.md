@@ -1,4 +1,4 @@
-# gt_spec
+# gt-labelling
 
 > Labeling OCR ground truth data
 
