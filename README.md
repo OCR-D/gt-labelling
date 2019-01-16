@@ -12,10 +12,10 @@ Add the namespace `http://www.ocr-d.de/GT/`. We recommend `gt` as namespace pref
 xmlns:gt="http://www.ocr-d.de/GT/"
 ```
 
-Set XSD schema location `http://www.ocr-d.de/GT/OCR-D_GT_schema.xsd`:
+Set XSD schema location `OCR-D_GT_schema.xsd`:
 
 ```xml
-xsi:schemaLocation="http://www.ocr-d.de/GT/OCR-D_GT_schema.xsd"
+xsi:schemaLocation="file:///OCR-D_GT_schema.xsd" or URL...
 ```
 
 ### METS Example
