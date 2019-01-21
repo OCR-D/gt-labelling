@@ -1,4 +1,4 @@
-# gt-labelling
+# gt-labelling : Labeling OCR ground truth data with special METS-Profile.
 
 > Labeling OCR ground truth data
 
