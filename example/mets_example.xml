@@ -4,7 +4,7 @@
     http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd http://www.loc.gov/METS/ 
     http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd http://www.loc.gov/mix/v10 
     http://www.loc.gov/standards/mix/mix10/mix10.xsd 
-    http://www.ocr-d.de/GT/ file:///OCR-D_GT_schema.xsd"
+    http://www.ocr-d.de/GT/ file:///C:/Users/matthias/Documents/GitHub/gt_spec-master/xsd_schema/OCR-D_GT_schema.xsd"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mets="http://www.loc.gov/METS/"
     xmlns:gt="http://www.ocr-d.de/GT/">
     <mets:metsHdr CREATEDATE="2018-12-17T10:40:18">
@@ -77,9 +77,9 @@
         </mets:mdWrap>
     </mets:dmdSec>
     <mets:dmdSec ID="DMDGT_0001">
-        <mets:mdWrap MDTYPE="OTHER">
+        <mets:mdWrap MDTYPE="OTHER" OTHERMDTYPE="GT">
             <mets:xmlData>
-                <gt:gt>
+                <gt:gt  xmlns:gt="http://www.ocr-d.de/GT/">
                     <gt:state prop="acquisition"/>
                     <gt:state prop="granularity/physical/document-related/page"/>
                     <gt:state prop="granularity/physical/document-related/region"/>
@@ -87,13 +87,9 @@
                     <gt:state prop="granularity/physical/document-related/word"/>
                     <gt:state prop="condition/production-related/document-faults/ink-from-facing"/>
                     <gt:state prop="condition/wear/additions/informative/stamps"/>
-                    <gt:state
-                        prop="data-attributes/document-related/visual/text/font/typeface/blackletter"/>
-                    <gt:state
-                        prop="data-attributes/document-related/visual/text/font/multi-font/font-sizes"/>
-                    <gt:state
-                        prop="data-attributes/document-related/visual/text/font/multi-font/typefaces"
-                    />
+                    <gt:state prop="data-attributes/document-related/visual/text/font/typeface/blackletter"/>
+                    <gt:state prop="data-attributes/document-related/visual/text/font/multi-font/font-sizes"/>
+                    <gt:state prop="data-attributes/document-related/visual/text/font/multi-font/typefaces"/>
                 </gt:gt>
             </mets:xmlData>
         </mets:mdWrap>
@@ -101,12 +97,11 @@
     <mets:dmdSec ID="DMDGT_0002">
         <mets:mdWrap MDTYPE="OTHER">
             <mets:xmlData>
-                <gt:state
-                    prop="data-attributes/document-related/visual/text/font/typeface/blackletter"/>
-                <gt:state
-                    prop="data-attributes/document-related/visual/text/font/multi-font/font-sizes"/>
-                <gt:state
-                    prop="data-attributes/document-related/visual/text/font/multi-font/typefaces"/>
+                <gt:gt  xmlns:gt="http://www.ocr-d.de/GT/">
+                 <gt:state prop="data-attributes/document-related/visual/text/font/typeface/blackletter"/>
+                <gt:state prop="data-attributes/document-related/visual/text/font/multi-font/font-sizes"/>
+                <gt:state prop="data-attributes/document-related/visual/text/font/multi-font/typefaces"/>
+               </gt:gt>
             </mets:xmlData>
         </mets:mdWrap>
     </mets:dmdSec>
