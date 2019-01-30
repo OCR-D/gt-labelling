@@ -3,9 +3,6 @@
     <xsl:output method="xml" indent="yes"/>
     <xsl:strip-space elements="*"/>
 
-    <xsl:param name="mets_schema">http://www.loc.gov/standards/mets/mets.xsd</xsl:param>
-    <xsl:variable name="mining_schema" select="document($mets_schema)"/>
-
     <xsl:template match="text()"/>
 
     <xsl:template match="Ontology">
