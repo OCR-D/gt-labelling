@@ -1,6 +1,8 @@
 # Version of the OCR-D-GT schema. Current: $(VERSION)
 VERSION = 18.01
 
+SHINCLUDE = shinclude
+
 SAXON_HE_VERSION_MAJOR = 9
 SAXON_HE_VERSION_MINOR = 8
 SAXON_HE_VERSION_PATCH = 0-1J
@@ -12,11 +14,14 @@ SAXON = java -jar $(SAXON_HE_JAR)
 ONTO_XML = DefaultLabelTypes_3.xml
 ONTO_URL = https://raw.githubusercontent.com/PRImA-Research-Lab/semantic-labelling/master/ontology/$(ONTO_XML)
 
-OCR-D-GTM-XSD = ocr-d-gtm-$(VERSION).xsd
+# Generated XSD. Default: $(OCR_D_GTM_XSD)
+OCR_D_GTM_XSD = ocr-d-gtm-$(VERSION).xsd
 
-# XSL to transform $(ONTO_XML) to $(OCR-D-GTM-XSD)
+# # Generated HTML doc. Default: $(OCR_D_GTM_HTML)
+# OCR_D_GTM_HTML = ocr-d-gtm-$(VERSION).html
+
 XSL_ONTO_TO_XSD = xsl/OCR-D-GTM-labelschema.xsl
-
+XSL_ONTO_TO_HTMLTABLE = xsl/OCR-D-GTM-htmltable.xsl
 
 # BEGIN-EVAL makefile-parser --make-help Makefile
 
@@ -24,15 +29,16 @@ help:
 	@echo ""
 	@echo "  Targets"
 	@echo ""
-	@echo "    saxon  Download Saxon"
-	@echo "    onto   Fetch the ontology from upstream"
-	@echo "    xsd    Build the XSD"
-	@echo "    clean  Remove all generated files"
+	@echo "    saxon   Download Saxon"
+	@echo "    onto    Fetch the ontology from upstream"
+	@echo "    xsd     Build the XSD"
+	@echo "    readme  Rebuild the readme including the generated table of properties"
+	@echo "    clean   Remove all generated files"
 	@echo ""
 	@echo "  Variables"
 	@echo ""
-	@echo "    VERSION          Version of the OCR-D-GT schema"
-	@echo "    XSL_ONTO_TO_XSD  XSL to transform $(ONTO_XML) to $(OCR-D-GTM-XSD)"
+	@echo "    VERSION        Version of the OCR-D-GT schema. Current: $(VERSION)"
+	@echo "    OCR_D_GTM_XSD  Generated XSD. Default: $(OCR_D_GTM_XSD)"
 
 # END-EVAL
 
@@ -51,11 +57,17 @@ $(ONTO_XML):
 	curl -O '$(ONTO_XML)' '$(ONTO_URL)'
 
 # Build the XSD
-xsd: $(OCR-D-GTM-XSD)
+xsd: $(OCR_D_GTM_XSD)
 
-$(OCR-D-GTM-XSD): saxon onto
-	$(SAXON) -xsl:$(XSL_ONTO_TO_XSD) -s:$(ONTO_XML) -o:$(OCR-D-GTM-XSD)
+# Rebuild the readme including the generated table of properties
+readme: saxon onto
+	$(SAXON) -xsl:$(XSL_ONTO_TO_HTMLTABLE) -s:$(ONTO_XML) > htmltable
+	$(SHINCLUDE) -c xml -i README.md 2>/dev/null
+	rm htmltable
+
+$(OCR_D_GTM_XSD): saxon onto
+	$(SAXON) -xsl:$(XSL_ONTO_TO_XSD) -s:$(ONTO_XML) -o:$(OCR_D_GTM_XSD)
 
 # Remove all generated files
 clean:
-	rm -r $(OCR-D-GTM-XSD)
+	rm -r $(OCR_D_GTM_XSD)
