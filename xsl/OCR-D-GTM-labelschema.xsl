@@ -20,7 +20,14 @@
 
     <xsl:template match="LabelTypeHierarchies">
         <xsl:element name="xsd:element">
+            <xsl:attribute name="name">gt</xsl:attribute>
+            <xsl:element name="xsd:complexType">
+                <xsl:element name="xsd:sequence">
+        <xsl:element name="xsd:element">
             <xsl:attribute name="name">state</xsl:attribute>
+            <xsl:attribute name="minOccurs">1</xsl:attribute>
+            <xsl:attribute name="maxOccurs">unbounded</xsl:attribute>
+            
             <xsl:element name="xsd:complexType">
                    <xsl:element name="xsd:attribute">
                     <xsl:attribute name="name">prop</xsl:attribute>
@@ -31,6 +38,9 @@
                         </xsl:element>
                     </xsl:element>
                 </xsl:element>
+            </xsl:element>
+        </xsl:element>
+        </xsl:element>
             </xsl:element>
         </xsl:element>
     </xsl:template>
