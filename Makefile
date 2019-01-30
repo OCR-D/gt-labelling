@@ -1,3 +1,6 @@
+# Version of the OCR-D-GT schema. Current: $(VERSION)
+VERSION = 18.01
+
 SAXON_HE_VERSION_MAJOR = 9
 SAXON_HE_VERSION_MINOR = 8
 SAXON_HE_VERSION_PATCH = 0-1J
@@ -9,12 +12,10 @@ SAXON = java -jar $(SAXON_HE_JAR)
 ONTO_XML = DefaultLabelTypes_3.xml
 ONTO_URL = https://raw.githubusercontent.com/PRImA-Research-Lab/semantic-labelling/master/ontology/$(ONTO_XML)
 
-# Version of the OCR-D-GT schema
-VERSION = 18.01
 OCR-D-GTM-XSD = ocr-d-gtm-$(VERSION).xsd
 
 # XSL to transform $(ONTO_XML) to $(OCR-D-GTM-XSD)
-XSL_ONTO_TO_XSD = xsl/OCR-D_GT_labelschema_maker.xsl
+XSL_ONTO_TO_XSD = xsl/OCR-D-GTM-labelschema.xsl
 
 
 # BEGIN-EVAL makefile-parser --make-help Makefile
@@ -30,7 +31,7 @@ help:
 	@echo ""
 	@echo "  Variables"
 	@echo ""
-	@echo "    OCR-D-GTM-XSD    Version of the OCR-D-GT schema"
+	@echo "    VERSION          Version of the OCR-D-GT schema"
 	@echo "    XSL_ONTO_TO_XSD  XSL to transform $(ONTO_XML) to $(OCR-D-GTM-XSD)"
 
 # END-EVAL
