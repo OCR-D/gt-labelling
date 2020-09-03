@@ -1,6 +1,6 @@
-# gt-labelling : Labeling OCR ground truth data with special METS-Profile.
+# gt-labelling : semantic-labelling OCR ground truth data
 
-> Labeling OCR ground truth data
+> Semantic-labelling OCR ground truth data and store these data with METS metadata set.
 
 ## Use the XSD Schema in METS
 
