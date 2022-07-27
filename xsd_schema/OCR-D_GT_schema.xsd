@@ -6,6 +6,8 @@
             elementFormDefault="qualified"
             attributeFormDefault="unqualified">
    <xsd:element name="gt">
+      <xsd:annotation>
+         <xsd:documentation>gt (Ground Truth) is the root element.</xsd:documentation></xsd:annotation>
       <xsd:complexType>
          <xsd:sequence>
             <xsd:element name="state" minOccurs="1" maxOccurs="unbounded">
@@ -43,34 +45,34 @@
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Human interaction required
 
-Examples:
-Ground truthing
-
-Related:
-Performance evaluation</xsd:documentation>
+                                 Examples:
+                                 Ground truthing
+                                 
+                                 Related:
+                                 Performance evaluation</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="automation/automated">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">No interaction required
 
-Examples:
-OCR
-
-Related:
-Machine learning</xsd:documentation>
+                                 Examples:
+                                 OCR
+                                 
+                                 Related:
+                                 Machine learning</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="automation/assisted">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Some automation, but user interaction possible / required
 
-Examples:
-Auto-completion when typing
-
-Related:
-Trainable,
-Interactive</xsd:documentation>
+                                 Examples:
+                                 Auto-completion when typing
+                                 
+                                 Related:
+                                 Trainable,
+                                 Interactive</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="production-method">
@@ -104,22 +106,21 @@ Interactive</xsd:documentation>
                            <xsd:enumeration value="content-type/metadata/features">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Extracted features
-
-Examples:
-Word count of a text
-
-Related:
-Information extraction,
-Machine learning</xsd:documentation>
+                                 
+                                 Examples:
+                                 Word count of a text
+                                 
+                                 Related:
+                                 Information extraction,
+                                 Machine learning</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="content-type/metadata/structure">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Structure of an object of some sort
-
-Examples:
-Document structure,
-Table structure</xsd:documentation>
+                                 Examples:
+                                 Document structure,
+                                 Table structure</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="content-type/metadata/structure/toc">
@@ -156,40 +157,40 @@ Table structure</xsd:documentation>
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">A model for a concept.
 
-Examples:
-Page model to aid recognition</xsd:documentation>
+                                 Examples:
+                                 Page model to aid recognition</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="content-type/lexicon">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">A collection of data items organised / sorted in a certain way.
 
-Lexicon: the vocabulary of a person, language, or branch of knowledge</xsd:documentation>
+                                    Lexicon: the vocabulary of a person, language, or branch of knowledge</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="content-type/corpus">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">
-Corpus: a collection of written texts, especially the entire works of a particular author or a body of writing on a particular subject.
-
-Examples:
-A text corpus,
-An image database</xsd:documentation>
+                                    Corpus: a collection of written texts, especially the entire works of a particular author or a body of writing on a particular subject.
+                                    
+                                    Examples:
+                                    A text corpus,
+                                    An image database</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="precision"/>
                            <xsd:enumeration value="precision/ground-truth">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Ground truth is a term used in various fields to refer to information provided by direct observation as opposed to information provided by inference.
-Gold standard: the best available under reasonable conditions</xsd:documentation>
+                                    Gold standard: the best available under reasonable conditions</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="precision/measured">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Measured (precise)
 
-Examples:
-OCR performance measured using ground truth</xsd:documentation>
+                                    Examples:
+                                    OCR performance measured using ground truth</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="precision/estimated">
@@ -201,8 +202,8 @@ OCR performance measured using ground truth</xsd:documentation>
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Random data of some sort.
 
-Examples:
-a random number between 1 and 6 (dice)</xsd:documentation>
+                                    Examples:
+                                    a random number between 1 and 6 (dice)</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="precision/fuzzy">
@@ -229,8 +230,8 @@ a random number between 1 and 6 (dice)</xsd:documentation>
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Open-source software (OSS) is computer software with its source code made available with a license in which the copyright holder provides the rights to study, change, and distribute the software to anyone and for any purpose.
 
-Related:
-Free / paid for</xsd:documentation>
+                                    Related:
+                                    Free / paid for</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="platform">
@@ -262,11 +263,11 @@ Free / paid for</xsd:documentation>
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Text represents natural language. 
 
-Examples:
-A news artcile
-
-Related:
-</xsd:documentation>
+                                 Examples:
+                                 A news artcile
+                                 
+                                 Related:
+                                 </xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="content-encoding/structured">
@@ -278,8 +279,8 @@ Related:
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Content encoded in tabular form
 
-Examples:
-A tab-separated table with headings and values</xsd:documentation>
+                                 Examples:
+                                 A tab-separated table with headings and values</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="content-encoding/image"/>
@@ -295,8 +296,8 @@ A tab-separated table with headings and values</xsd:documentation>
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">
 
-Examples:
-Online handwriting</xsd:documentation>
+                                 Examples:
+                                 Online handwriting</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="content-encoding/mathematical/polygonal"/>
@@ -304,381 +305,381 @@ Online handwriting</xsd:documentation>
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">General domain, research field or specific processing strategy of a workflow activty.
 
-Examples:
-An activity for automated number plate recognition could be labelled with "OCR" domain.
-
-Related:
-"Topic" of a data object</xsd:documentation>
+                                    Examples:
+                                    An activity for automated number plate recognition could be labelled with "OCR" domain.
+                                    
+                                    Related:
+                                    "Topic" of a data object</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="activityDomain/computing">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Computing is any goal-oriented activity requiring, benefiting from, or creating a mathematical sequence of steps known as an algorithm — e.g. through computers.
 
-Examples:
-Any activity in document image analysis is from the domain of computing. Only steps such as physical document restoration should be excluded.
-
-Related:
-Data object "topic" such as Engineering</xsd:documentation>
+                                    Examples:
+                                    Any activity in document image analysis is from the domain of computing. Only steps such as physical document restoration should be excluded.
+                                    
+                                    Related:
+                                    Data object "topic" such as Engineering</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="activityDomain/computing/visual">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Visual computing is a generic term for all computer science disciplines handling with images and 3D models, i.e. computer graphics, image processing, visualization, computer vision, virtual and augmented reality, video processing, but also includes aspects of pattern recognition, human computer interaction, machine learning and digital libraries.
 
-Examples:
-See above
-
-Related:
-"Machine Learning" (separate label type)</xsd:documentation>
+                                 Examples:
+                                 See above
+                                 
+                                 Related:
+                                 "Machine Learning" (separate label type)</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="activityDomain/computing/visual/imgVidProc">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Image processing is processing of images using mathematical operations by using any form of signal processing for which the input is an image, a series of images, or a video, such as a photograph or video frame.
-Video processing is a particular case of signal processing, which often employs video filters and where the input and output signals are video files or video streams.
-
-Examples:
-Binarisation of a colour image
-
-Related:
-Content analysis (for information extraction)
-Computer graphics (for visualisation)</xsd:documentation>
+                                    Video processing is a particular case of signal processing, which often employs video filters and where the input and output signals are video files or video streams.
+                                    
+                                    Examples:
+                                    Binarisation of a colour image
+                                    
+                                    Related:
+                                    Content analysis (for information extraction)
+                                    Computer graphics (for visualisation)</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="activityDomain/computing/visual/imgVidProc/geometric">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Affine transsformation or other geometric operation applied to an image / video.
-An affine transformation is an important class of linear 2-D geometric transformations which maps variables (e.g. pixel intensity values located at position Eqn:eqnxy1 in an input image) into new variables (e.g. Eqn:eqnxy2 in an output image) by applying a linear combination of translation, rotation, scaling and/or shearing (i.e. non-uniform scaling in some directions) operations.
-
-Examples:
-Rotation, dewarping
-
-Related:
-Pixel-based operations</xsd:documentation>
-                              </xsd:annotation>
+                                    An affine transformation is an important class of linear 2-D geometric transformations which maps variables (e.g. pixel intensity values located at position Eqn:eqnxy1 in an input image) into new variables (e.g. Eqn:eqnxy2 in an output image) by applying a linear combination of translation, rotation, scaling and/or shearing (i.e. non-uniform scaling in some directions) operations.
+                                    
+                                    Examples:
+                                    Rotation, dewarping
+                                    
+                                    Related:
+                                    Pixel-based operations</xsd:documentation>
+                                                                  </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="activityDomain/computing/visual/imgVidProc/pixel-based">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Any image operation on pixel-level
 
-Examples:
-Binarisation, morphological operations
-
-Related:
-Geometric processing</xsd:documentation>
+                                    Examples:
+                                    Binarisation, morphological operations
+                                    
+                                    Related:
+                                    Geometric processing</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="activityDomain/computing/visual/analysisRecognition">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Content analysis is "a wide and heterogeneous set of manual or computer-assisted techniques for contextualized interpretations of documents produced by communication processes in the strict sense of that phrase (any kind of text, written, iconic, multimedia, etc.) or signification processes (traces and artifacts), having as ultimate goal the production of valid and trustworthy inferences."
 
-Examples:
-Text recognition / OCR
-
-Related:
-Text processing (separate categoty)
-Performance evaluation (separate categoty)</xsd:documentation>
+                                    Examples:
+                                    Text recognition / OCR
+                                    
+                                    Related:
+                                    Text processing (separate categoty)
+                                    Performance evaluation (separate categoty)</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="activityDomain/computing/visual/analysisRecognition/text">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Translation of any kind of depicted symbols to machine readable format
 
-Examples:
-OCR
-Mathematical equation recognition
-
-Related:
-Text processing (separate category)
-Table recognition
-Map reading</xsd:documentation>
-                              </xsd:annotation>
+                                    Examples:
+                                    OCR
+                                    Mathematical equation recognition
+                                    
+                                    Related:
+                                    Text processing (separate category)
+                                    Table recognition
+                                    Map reading</xsd:documentation>
+                                                                  </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="activityDomain/computing/visual/analysisRecognition/text/ocr">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Optical character recognition (optical character reader, OCR) is the mechanical or electronic conversion of images of typed, handwritten or printed text into machine-encoded text, whether from a scanned document, a photo of a document, a scene-photo (for example the text on signs and billboards in a landscape photo) or from subtitle text superimposed on an image (for example from a television broadcast).
 
-Examples:
-Number plate reading
-
-Related:
-Mathematical equation recognition
-Map reading</xsd:documentation>
+                                    Examples:
+                                    Number plate reading
+                                    
+                                    Related:
+                                    Mathematical equation recognition
+                                    Map reading</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="activityDomain/computing/visual/analysisRecognition/text/maths">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Specialised recognition of mathematical equations / formulas.
 
-Examples:
-Equations in scientific papers
-
-Related:
-OCR</xsd:documentation>
+                                    Examples:
+                                    Equations in scientific papers
+                                    
+                                    Related:
+                                    OCR</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="activityDomain/computing/visual/analysisRecognition/text/date">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Specialised recognition of dates and times
 
-Examples:
-Date printed on newspaper page
-
-Related:
-OCR</xsd:documentation>
+                                    Examples:
+                                    Date printed on newspaper page
+                                    
+                                    Related:
+                                    OCR</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="activityDomain/computing/visual/analysisRecognition/tables">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">The recognition of table/form structure and/or contents. 
 
-Examples:
-Stock exchange data in a newspaper,
-Filled in questionaire form
-
-Related:
-OCR
-Object / shape recognition (e.g. table separator detection)</xsd:documentation>
-                              </xsd:annotation>
+                                    Examples:
+                                    Stock exchange data in a newspaper,
+                                    Filled in questionaire form
+                                    
+                                    Related:
+                                    OCR
+                                    Object / shape recognition (e.g. table separator detection)</xsd:documentation>
+                           </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="activityDomain/computing/visual/analysisRecognition/charts">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Recognition or analysis of data charts.
 
-Examples:
-Pie chart,
-Bar chart,
-Graphs
-
-Related:
-OCR,
-Object / shape recognition</xsd:documentation>
+                                 Examples:
+                                 Pie chart,
+                                 Bar chart,
+                                 Graphs
+                                 
+                                 Related:
+                                 OCR,
+                                 Object / shape recognition</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="activityDomain/computing/visual/analysisRecognition/maps">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Recognition and analysis of maps or plans of any kind.
 
-Examples:
-Floor plans,
-Engineering drawings,
-Geographical maps
-
-Related:
-OCR,
-Object / shape recognition</xsd:documentation>
+                                 Examples:
+                                 Floor plans,
+                                 Engineering drawings,
+                                 Geographical maps
+                                 
+                                 Related:
+                                 OCR,
+                                 Object / shape recognition</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="activityDomain/computing/visual/analysisRecognition/shape">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Object recognition is a process for identifying a specific object in a digital image or video. Object recognition algorithms rely on matching, learning, or pattern recognition algorithms using appearance-based or feature-based techniques. Common techniques include edges, gradients, Histogram of Oriented Gradients (HOG), Haar wavelets, and linear binary patterns.
 
-Examples:
-Logo recognition
-Fingerprint reading
-
-Related:
-Machine learning,
-Text and symbol recognition
-Forensic studies</xsd:documentation>
+                                 Examples:
+                                 Logo recognition
+                                 Fingerprint reading
+                                 
+                                 Related:
+                                 Machine learning,
+                                 Text and symbol recognition
+                                 Forensic studies</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="activityDomain/computing/visual/analysisRecognition/shape/face">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">A facial recognition system is a computer application capable of identifying or verifying a person from a digital image or a video frame from a video source. One of the ways to do this is by comparing selected facial features from the image and a facial database.
 
-Examples:
-Smartphone unlocking via detection of owner's face
-
-Related:
-Machine learning (separate category)</xsd:documentation>
+                                 Examples:
+                                 Smartphone unlocking via detection of owner's face
+                                 
+                                 Related:
+                                 Machine learning (separate category)</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="activityDomain/computing/visual/analysisRecognition/layoutAnalysis">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">In computer vision, document layout analysis is the process of identifying and categorizing the regions of interest in the scanned image of a text document. A reading system requires the segmentation of text zones from non-textual ones and the arrangement in their correct reading order.
 
-Examples:
-Page layout analysis (segmentation into regions, classification into text, graphic, table etc.)
-
-Related:
-"OCR": Often used as a synonym for layout analysis and text recognition, but strictly only the text recognition component.</xsd:documentation>
+                                 Examples:
+                                 Page layout analysis (segmentation into regions, classification into text, graphic, table etc.)
+                                 
+                                 Related:
+                                 "OCR": Often used as a synonym for layout analysis and text recognition, but strictly only the text recognition component.</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="activityDomain/computing/visual/graphics">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Computer graphics are pictures and movies created using computers - usually referring to image data created by a computer specifically with help from specialized graphical hardware and software.
 
-Example:
-Text rendering
-
-Related:
-Presentation / visualisation (part of Data Creation / Transformation)</xsd:documentation>
+                                 Example:
+                                 Text rendering
+                                 
+                                 Related:
+                                 Presentation / visualisation (part of Data Creation / Transformation)</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="activityDomain/computing/text">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">In computing, the term text processing refers to the discipline of mechanizing the creation or manipulation of electronic text. Text usually refers to all the alphanumeric characters specified on the keyboard of the person performing the mechanization, but in general text here means the abstraction layer that is one layer above the standard character encoding of the target text. The term processing refers to automated (or mechanized) processing, as opposed to the same manipulation done manually.
 
-Text processing involves computer commands which invoke content, content changes, and cursor movement, for example to
-- search and replace
-- format
-- generate a processed report of the content of, or
-- filter a file or report of a text file.
-
-Related:
-Text recognition (Visual Computing)</xsd:documentation>
+                                 Text processing involves computer commands which invoke content, content changes, and cursor movement, for example to
+                                 - search and replace
+                                 - format
+                                 - generate a processed report of the content of, or
+                                 - filter a file or report of a text file.
+                                 
+                                 Related:
+                                 Text recognition (Visual Computing)</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="activityDomain/computing/text/naturalLanguage">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Natural language processing (NLP) is a field of computer science, artificial intelligence, and computational linguistics concerned with the interactions between computers and human (natural) languages. As such, NLP is related to the area of human–computer interaction. Many challenges in NLP involve: natural language understanding, enabling computers to derive meaning from human or natural language input; and others involve natural language generation.
 
-Examples:
-Digitial assistents (e.g. in smartphones)
-
-Related:
-OCR</xsd:documentation>
+                                 Examples:
+                                 Digitial assistents (e.g. in smartphones)
+                                 
+                                 Related:
+                                 OCR</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="activityDomain/computing/text/naturalLanguage/identification">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">In natural language processing, language identification or language guessing is the problem of determining which natural language given content is in.
 
-Examples:
-Language identification to select a dictionary for OCR applications
-
-Related:
-OCR</xsd:documentation>
+                                 Examples:
+                                 Language identification to select a dictionary for OCR applications
+                                 
+                                 Related:
+                                 OCR</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="activityDomain/computing/text/naturalLanguage/sentiment">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Sentiment analysis (also known as opinion mining) refers to the use of natural language processing, text analysis and computational linguistics to identify and extract subjective information in source materials.
 
-Examples:
-A basic task in sentiment analysis is classifying the polarity of a given text at the document, sentence, or feature/aspect level — whether the expressed opinion in a document, a sentence or an entity feature/aspect is positive, negative, or neutral.
+                                 Examples:
+                                 A basic task in sentiment analysis is classifying the polarity of a given text at the document, sentence, or feature/aspect level — whether the expressed opinion in a document, a sentence or an entity feature/aspect is positive, negative, or neutral.
 
-Related:
-Summarising</xsd:documentation>
+                                 Related:
+                                 Summarising</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="activityDomain/computing/text/naturalLanguage/summarising">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Automatic summarization is the process of reducing a text document with a computer program in order to create a summary that retains the most important points of the original document. Technologies that can make a coherent summary take into account variables such as length, writing style and syntax.
 
-Examples:
-Automatic summary of a news article
+                                 Examples:
+                                 Automatic summary of a news article
 
-Related:
-Sentiment mining</xsd:documentation>
+                                 Related:
+                                 Sentiment mining</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="activityDomain/computing/text/naturalLanguage/partOfSpeech">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">In corpus linguistics, part-of-speech tagging (POS tagging or POST), also called grammatical tagging or word-category disambiguation, is the process of marking up a word in a text (corpus) as corresponding to a particular part of speech, based on both its definition and its context—i.e., its relationship with adjacent and related words in a phrase, sentence, or paragraph.
 
-Examples:
-A simplified form of this is commonly taught to school-age children, in the identification of words as nouns, verbs, adjectives, adverbs, etc.
+                                 Examples:
+                                 A simplified form of this is commonly taught to school-age children, in the identification of words as nouns, verbs, adjectives, adverbs, etc.
 
-Related:
-Named entitiy recognition,
-Tokenisation (as part of Data creation / transformation)</xsd:documentation>
+                                 Related:
+                                 Named entitiy recognition,
+                                 Tokenisation (as part of Data creation / transformation)</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="activityDomain/computing/text/naturalLanguage/namedEntities">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Named-entity recognition (NER) (also known as entity identification, entity chunking and entity extraction) is a subtask of information extraction that seeks to locate and classify named entities in text into pre-defined categories such as the names of persons, organizations, locations, expressions of times, quantities, monetary values, percentages, etc.
 
-Related:
-Part-of-speech tagging
-Summarising</xsd:documentation>
+                                 Related:
+                                 Part-of-speech tagging
+                                 Summarising</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="activityDomain/computing/machineLearning">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Machine learning is a subfield of computer science[1] that evolved from the study of pattern recognition and computational learning theory in artificial intelligence. In 1959, Arthur Samuel defined machine learning as a "Field of study that gives computers the ability to learn without being explicitly programmed". Machine learning explores the study and construction of algorithms that can learn from and make predictions on data.
 
-Examples:
-Decision tree learning,
-Artificial neural networks
+                                 Examples:
+                                 Decision tree learning,
+                                 Artificial neural networks
 
-Related:
-Content analysis and recognition
-</xsd:documentation>
+                                 Related:
+                                 Content analysis and recognition
+                                 </xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="activityDomain/computing/informationManagement">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Information management (IM) concerns a cycle of organisational activity: the acquisition of information from one or more sources, the custodianship and the distribution of that information to those who need it, and its ultimate disposition through archiving or deletion.
-Data management comprises all the disciplines related to managing data as a valuable resource.
+                                 Data management comprises all the disciplines related to managing data as a valuable resource.
 
-Examples:
-Data access,
-Data security
-Document management system
+                                 Examples:
+                                 Data access,
+                                 Data security
+                                 Document management system
 
-Related:
-Visualistation (as part of Data Creation / Transformation)</xsd:documentation>
+                                 Related:
+                                 Visualistation (as part of Data Creation / Transformation)</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="activityDomain/computing/informationManagement/retrieval">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Data retrieval means obtaining data from a database management system such as ODBMS. In this case, it is considered that data is represented in a structured way, and there is no ambiguity in data. In order to retrieve the desired data the user present a set of criteria by a query.
 
-Examples:
-Retrieval of image from image database using pattern matching
+                                 Examples:
+                                 Retrieval of image from image database using pattern matching
 
-Related:
-Visualisation</xsd:documentation>
+                                 Related:
+                                 Visualisation</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="activityDomain/computing/performanceEval">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Measuring the performance of a given software system or method, returning for instance a quality value.
 
-Examples:
-OCR accuracy measurement
+                                 Examples:
+                                 OCR accuracy measurement
 
-Related:
-Information extraction
-Pattern matching</xsd:documentation>
+                                 Related:
+                                 Information extraction
+                                 Pattern matching</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="activityDomain/computing/performanceEval/comparative">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Basic comparison of software systems or methods to decide which is better under given circumstances.
 
-Examples:
-Number of correctly recognised words of two OCR engines
+                                 Examples:
+                                 Number of correctly recognised words of two OCR engines
 
-Related:
-Information extraction
-Ground truth</xsd:documentation>
+                                 Related:
+                                 Information extraction
+                                 Ground truth</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="activityDomain/computing/performanceEval/in-depth">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Performance analysis providing detail on the evaluation result in order to be able to understand the result and improve the methods / systems under investigation.
 
-Examples:
-Region-based layout analysis performance with merges, splits, misses, false detections etc.,
-OCR accuracy with recognition statistics per character class
+                                 Examples:
+                                 Region-based layout analysis performance with merges, splits, misses, false detections etc.,
+                                 OCR accuracy with recognition statistics per character class
 
-Related:
-Information retrieval</xsd:documentation>
+                                 Related:
+                                 Information retrieval</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="activityDomain/computing/forensics">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Forensic science is the application of science to criminal and civil laws. Forensic scientists collect, preserve, and analyze scientific evidence during the course of an investigation.
 
-Examples:
-Document verification / counterfeit detection
+                                 Examples:
+                                 Document verification / counterfeit detection
 
-Related:
-Face recognition</xsd:documentation>
+                                 Related:
+                                 Face recognition</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="processingLevel">
@@ -690,290 +691,290 @@ Face recognition</xsd:documentation>
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Data processing involving basic conversion, application of mathematical formulas or similar
 
-Examples:
-Image thresholding
-Image smoothing
-Text chunking (e.g. splitting into words)
+                                 Examples:
+                                 Image thresholding
+                                 Image smoothing
+                                 Text chunking (e.g. splitting into words)
 
-Related:
-Several visual computing approaches</xsd:documentation>
+                                 Related:
+                                 Several visual computing approaches</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="processingLevel/high-level">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Processing that entails some form of recognition, reasoning or matching, for example.
 
-Examples:
-OCR
-Face recognition
+                                 Examples:
+                                 OCR
+                                 Face recognition
 
-Related:
-Natural language processing,
-Content analysis and recognition</xsd:documentation>
+                                 Related:
+                                 Natural language processing,
+                                 Content analysis and recognition</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="processingLevel/high-level/detection">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Methods involving some form of detection, identification, location or matching.
 
-Examples:
-Writer identification,
-Logo detection
+                                 Examples:
+                                 Writer identification,
+                                 Logo detection
 
-Related:
-Object recognition,
-OCR,
-Machine learning</xsd:documentation>
+                                 Related:
+                                 Object recognition,
+                                 OCR,
+                                 Machine learning</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="processingLevel/high-level/detection/verification">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Authentication (from Greek: αὐθεντικός authentikos, "real, genuine", from αὐθέντης authentes, "author") is the act of confirming the truth of an attribute of a single piece of data (a datum) claimed true by an entity. In contrast with identification which refers to the act of stating or otherwise indicating a claim purportedly attesting to a person or thing's identity, authentication is the process of actually confirming that identity.
 
-Examples:
-Signature verification
+                                 Examples:
+                                 Signature verification
 
-Related:
-Forensic studies,
-Content analysis and recognition</xsd:documentation>
+                                 Related:
+                                 Forensic studies,
+                                 Content analysis and recognition</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="processingLevel/high-level/classification">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">In machine learning and statistics, classification is the problem of identifying to which of a set of categories (sub-populations) a new observation belongs, on the basis of a training set of data containing observations (or instances) whose category membership is known.
 
-Pattern recognition is a branch of machine learning that focuses on the recognition of patterns and regularities in data, although it is in some cases considered to be nearly synonymous with machine learning.
+                                 Pattern recognition is a branch of machine learning that focuses on the recognition of patterns and regularities in data, although it is in some cases considered to be nearly synonymous with machine learning.
 
-Examples:
-OCR
+                                 Examples:
+                                 OCR
 
-Related:
-Machine learning,
-Content analysis and recognition</xsd:documentation>
+                                 Related:
+                                 Machine learning,
+                                 Content analysis and recognition</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="processingLevel/high-level/understanding">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Highest level of processing including reasoning based on the actual meaning of the data that is beaing processed.
 
-Examples:
-Natural language understanding
+                                 Examples:
+                                 Natural language understanding
 
-Related:
-Machine learning,
-Content analysis and recognition,
-Natural language processing</xsd:documentation>
+                                 Related:
+                                 Machine learning,
+                                 Content analysis and recognition,
+                                 Natural language processing</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="dataTransformation">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Any action to creates or transforms data.
 
-Examples:
-Image acquisition,
-conversion,
-Text tokenisation,
-Annotation,
-Extraction</xsd:documentation>
+                                 Examples:
+                                 Image acquisition,
+                                 conversion,
+                                 Text tokenisation,
+                                 Annotation,
+                                 Extraction</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="dataTransformation/acquisition">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Data acquisition is the process of sampling signals that measure real world physical conditions and converting the resulting samples into digital numeric values that can be manipulated by a computer. Data acquisition systems, abbreviated by the acronyms DAS or DAQ, typically convert analog waveforms into digital values for processing. The components of data acquisition systems include:
 
-Sensors, to convert physical parameters to electrical signals.
-Signal conditioning circuitry, to convert sensor signals into a form that can be converted to digital values.
-Analog-to-digital converters, to convert conditioned sensor signals to digital values.
+                                 Sensors, to convert physical parameters to electrical signals.
+                                 Signal conditioning circuitry, to convert sensor signals into a form that can be converted to digital values.
+                                 Analog-to-digital converters, to convert conditioned sensor signals to digital values.
 
-Related:
-Conversion
-Retrieval</xsd:documentation>
+                                 Related:
+                                 Conversion
+                                 Retrieval</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="dataTransformation/conversion">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Data conversion is the conversion of computer data from one format to another.
 
-Examples:
-JPG image to PNG image,
-UTF-8 encoded text to ASCII
+                                 Examples:
+                                 JPG image to PNG image,
+                                 UTF-8 encoded text to ASCII
 
-Related:
-Low-level processing</xsd:documentation>
+                                 Related:
+                                 Low-level processing</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="dataTransformation/segmentation">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Splitting data into distinct parts or demarking the points where to split.
 
-Examples:
-Document page segmentation,
-Image segmentation,
-Foreground-background separation,
-Text tokeinsation / chunking
+                                 Examples:
+                                 Document page segmentation,
+                                 Image segmentation,
+                                 Foreground-background separation,
+                                 Text tokeinsation / chunking
 
-Related:
-Content analysis / recognition
-Annotation / labelling</xsd:documentation>
+                                 Related:
+                                 Content analysis / recognition
+                                 Annotation / labelling</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="dataTransformation/enhancement">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Removal of unwanted parts of data or adding/correcting data to improve readability, quality. Pre- or postprocessing of some kind.
 
-Examples:
-Noise removal in images,
-Geometric correction,
-Spelling correction,
-Watermark removal,
-Text restoration
+                                 Examples:
+                                 Noise removal in images,
+                                 Geometric correction,
+                                 Spelling correction,
+                                 Watermark removal,
+                                 Text restoration
 
-Related:
-Low-level processing
-</xsd:documentation>
+                                 Related:
+                                 Low-level processing
+                                 </xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="dataTransformation/enrichment">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Adding data to increase information content
 
-Examples:
-Adding metadata
+                                 Examples:
+                                 Adding metadata
 
-Related:
-Part-of-speech tagging</xsd:documentation>
+                                 Related:
+                                 Part-of-speech tagging</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="dataTransformation/enrichment/annotation">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Localised addition of information.
 
-Examples:
-Part-of-speech tagging,
-Named entitiy tagging,
-Page layout annotation (regions etc.)
+                                 Examples:
+                                 Part-of-speech tagging,
+                                 Named entitiy tagging,
+                                 Page layout annotation (regions etc.)
 
-Related:
-Segmentation</xsd:documentation>
+                                 Related:
+                                 Segmentation</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="dataTransformation/extraction">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Information extraction (IE) is the task of automatically extracting structured information from unstructured and/or semi-structured machine-readable documents. In most of the cases this activity concerns processing human language texts by means of natural language processing (NLP).
 
-Examples:
-Language and vocabulary analysis,
-Image understanding
+                                 Examples:
+                                 Language and vocabulary analysis,
+                                 Image understanding
 
-Related:
-High-level processing
-Content analysis and recognition</xsd:documentation>
+                                 Related:
+                                 High-level processing
+                                 Content analysis and recognition</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="dataTransformation/visualisation">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Information visualisation is the study of (interactive) visual representations of abstract data to reinforce human cognition. The abstract data include both numerical and non-numerical data, such as text and geographic information.
 
-Examples:
-Text rendering
-Chart creation
+                                 Examples:
+                                 Text rendering
+                                 Chart creation
 
-Related:
-Conversion
-Computer graphics</xsd:documentation>
+                                 Related:
+                                 Conversion
+                                 Computer graphics</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="adaptability">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">How well can the activity adapt to different circumstances.
 
-Examples:
-Trainable method,
-Interactive system</xsd:documentation>
+                                 Examples:
+                                 Trainable method,
+                                 Interactive system</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="adaptability/configurable">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">A method that can be configured in some way to allow the explicit adaption to different use cases.
 
-Examples:
-OCR with settings for language, font etc.
+                                 Examples:
+                                 OCR with settings for language, font etc.
 
-Related:
-Interactive
-Generic / unconstraint</xsd:documentation>
+                                 Related:
+                                 Interactive
+                                 Generic / unconstraint</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="adaptability/trainable">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">A method that can be trained by examples.
 
-Examples:
-OCR training to support a new type of font
+                                 Examples:
+                                 OCR training to support a new type of font
 
-Related:
-Configurable,
-Interactive,
-Generic / unconstraint</xsd:documentation>
+                                 Related:
+                                 Configurable,
+                                 Interactive,
+                                 Generic / unconstraint</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="adaptability/trainable/supervised">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Supervised learning is the machine learning task of inferring a function from labeled training data.[1] The training data consist of a set of training examples. In supervised learning, each example is a pair consisting of an input object (typically a vector) and a desired output value (also called the supervisory signal). A supervised learning algorithm analyzes the training data and produces an inferred function, which can be used for mapping new examples.
 
-Examples:
-Labelled character images for training an OCR engine
+                                 Examples:
+                                 Labelled character images for training an OCR engine
 
-Related:
-Configurable
-Interactive</xsd:documentation>
+                                 Related:
+                                 Configurable
+                                 Interactive</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="adaptability/trainable/unsupervised">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Unsupervised learning is the machine learning task of inferring a function to describe hidden structure from unlabeled data. Since the examples given to the learner are unlabeled, there is no error or reward signal to evaluate a potential solution. This distinguishes unsupervised learning from supervised learning and reinforcement learning.
 
-Examples:
-Clustering
+                                 Examples:
+                                 Clustering
 
-Related:
-Machine learning</xsd:documentation>
+                                 Related:
+                                 Machine learning</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="adaptability/interactive">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">A method that adapts according to user interaction.
 
-Examples:
-Dictionary expansion during spell checking
+                                 Examples:
+                                 Dictionary expansion during spell checking
 
-Related:
-Configurable,
-Trainable</xsd:documentation>
+                                 Related:
+                                 Configurable,
+                                 Trainable</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="adaptability/generic">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Method with wide applicability which therefore may not need to be trained or configured.
 
-Examples:
-Google multi-language OCR
+                                 Examples:
+                                 Google multi-language OCR
 
-Related:
-Trainable,
-Configurable</xsd:documentation>
+                                 Related:
+                                 Trainable,
+                                 Configurable</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="maturity">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">System / method/ algorithm maturity.
 
-Examples:
-Prototype,
-Production system
+                                 Examples:
+                                 Prototype,
+                                 Production system
 
-Related:
-Licence</xsd:documentation>
+                                 Related:
+                                 Licence</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="maturity/stable">
@@ -1000,149 +1001,149 @@ Licence</xsd:documentation>
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Data that has been composed, created, produced or rendered in some form.
 
-Examples:
-Book,
-Website
+                                 Examples:
+                                 Book,
+                                 Website
 
-Related:
-Content Encoding</xsd:documentation>
+                                 Related:
+                                 Content Encoding</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="originalSource/produced/physical">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">The data was orininally part of a physical medium
 
-Examples:
-Newspaper
-Whiteboard writing
+                                 Examples:
+                                 Newspaper
+                                 Whiteboard writing
 
-Related:
-Physical production method</xsd:documentation>
+                                 Related:
+                                 Physical production method</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="originalSource/produced/physical/paper">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">The data was orignially produced on paper
 
-Example:
-Printed magazine
+                                 Example:
+                                 Printed magazine
 
-Related:
-Age</xsd:documentation>
+                                 Related:
+                                 Age</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="originalSource/produced/physical/paper/book">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">A paper book
 
-Examples:
-Notebook,
-Novel
+                                 Examples:
+                                 Notebook,
+                                 Novel
 
-Related:
-Physical production method</xsd:documentation>
+                                 Related:
+                                 Physical production method</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="originalSource/produced/physical/paper/newspaper">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">A printed newspaper
 
-Examples:
-The Guardian
+                                 Examples:
+                                 The Guardian
 
-Related:
-Physical production method</xsd:documentation>
+                                 Related:
+                                 Physical production method</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="originalSource/produced/physical/paper/magazine">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">A printed magazine.
 
-Usyually with more complex layout and formatting in comparison to books or newspapers.
+                                 Usyually with more complex layout and formatting in comparison to books or newspapers.
 
-Examples:
-Time magazine
+                                 Examples:
+                                 Time magazine
 
-Related:
-Physical production method</xsd:documentation>
+                                 Related:
+                                 Physical production method</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="originalSource/produced/physical/paper/journal">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">A printed journal
 
-Examples:
-Science journal
+                                 Examples:
+                                 Science journal
 
-Related:
-Physical production method</xsd:documentation>
+                                 Related:
+                                 Physical production method</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="originalSource/produced/physical/whiteboard">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">The data was originally produced on a whiteboard / flipchart / blackboard
 
-Examples:
-Whiteboard bullet points from a meeting
+                                 Examples:
+                                 Whiteboard bullet points from a meeting
 
-Related:
-Physical production method</xsd:documentation>
+                                 Related:
+                                 Physical production method</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="originalSource/produced/physical/poster">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">A poster or board of some kind
 
-Examples:
-A poster for a research paper
+                                 Examples:
+                                 A poster for a research paper
 
-Related:
-Physical production method</xsd:documentation>
+                                 Related:
+                                 Physical production method</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="originalSource/produced/virtual">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">The data was created in / for the virtual space (digital)
 
-Examples:
-Word processor document
+                                 Examples:
+                                 Word processor document
 
-Related:
-Content encoding</xsd:documentation>
+                                 Related:
+                                 Content encoding</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="originalSource/produced/virtual/www">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">The data was created for the Internet.
 
-Examples:
-Wikipedia page
+                                 Examples:
+                                 Wikipedia page
 
-Related:
-Data conversion,
-Visualisation</xsd:documentation>
+                                 Related:
+                                 Data conversion,
+                                 Visualisation</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="originalSource/captured">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Data captured from the real world / the environment
 
-Examples:
-Photograph of a street
+                                 Examples:
+                                 Photograph of a street
 
-Related:
-Acquisition</xsd:documentation>
+                                 Related:
+                                 Acquisition</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="originalSource/captured/scenes">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Scenes captured from the world
 
-Examples:
-A picture of a room with people
+                                 Examples:
+                                 A picture of a room with people
 
-Related:
-Acquisition</xsd:documentation>
+                                 Related:
+                                 Acquisition</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="originalSource/captured/scenes/3D">
@@ -1154,48 +1155,48 @@ Acquisition</xsd:documentation>
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Involved methods that lead from the source medium to the current state / format
 
-Examples:
-Scanning,
-Photocopying
+                                 Examples:
+                                 Scanning,
+                                 Photocopying
 
-Related:
-Physical production method,
-Source medium</xsd:documentation>
+                                 Related:
+                                 Physical production method,
+                                 Source medium</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="acquisition/analogToDigital">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Conversion from any form of analog or physical data / medium to digital form.
 
-Examples:
-Digital photography,
-Scanning
+                                 Examples:
+                                 Digital photography,
+                                 Scanning
 
-Related:
-Source medium</xsd:documentation>
+                                 Related:
+                                 Source medium</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="acquisition/analogToDigital/scanning">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Capturing with digital scanner
 
-Examples:
-Flatbed scanner
+                                 Examples:
+                                 Flatbed scanner
 
-Related:
-Acquisition</xsd:documentation>
+                                 Related:
+                                 Acquisition</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="acquisition/analogToDigital/camera">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Camera-based digitisation
 
-Examples:
-Overhead scanner,
-Smartphone document capture
+                                 Examples:
+                                 Overhead scanner,
+                                 Smartphone document capture
 
-Related:
-Acquisition method</xsd:documentation>
+                                 Related:
+                                 Acquisition method</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="acquisition/copied">
@@ -1227,12 +1228,12 @@ Acquisition method</xsd:documentation>
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">The combination of components or elements to form a connected whole
 
-Examples:
-Artificial ground truth (e.g. a synthetic newspaper page)
+                                 Examples:
+                                 Artificial ground truth (e.g. a synthetic newspaper page)
 
-Related:
-Acquisition
-Source medium</xsd:documentation>
+                                 Related:
+                                 Acquisition
+                                 Source medium</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="contentOfInterest">
@@ -1247,11 +1248,11 @@ Source medium</xsd:documentation>
                            <xsd:enumeration value="contentOfInterest/visual/graphical/barcode">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">A barcode is a machine-readable representation of data relating to the object to which it is attached. Originally barcodes systematically represented data by varying the widths and spacings of parallel lines, and may be referred to as linear or one-dimensional (1D). Later two-dimensional (2D) codes were developed, using rectangles, dots, hexagons and other geometric patterns in two dimensions, usually called barcodes although they do not use bars as such. Barcodes originally were scanned by special optical scanners called barcode readers. Later applications software became available for devices that could read images, such as smartphones with cameras.&#xD;
-&#xD;
-Examples:&#xD;
-- Barcode on a product&#xD;
-- QR code representing a weblink&#xD;
-</xsd:documentation>
+                                 &#xD;
+                                 Examples:&#xD;
+                                 - Barcode on a product&#xD;
+                                 - QR code representing a weblink&#xD;
+                                 </xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="contentOfInterest/visual/image"/>
@@ -1305,8 +1306,8 @@ Examples:&#xD;
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">A complete document
 
-Examples:
-Book</xsd:documentation>
+                                 Examples:
+                                 Book</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="granularity/logical/document-related/chapter"/>
@@ -1391,7 +1392,7 @@ Book</xsd:documentation>
                            </xsd:enumeration>
                            <xsd:enumeration value="condition/production-related/document-characteristics/low-contrast">
                               <xsd:annotation>
-                                 <xsd:documentation xml:lang="en">The contrast bwtween the paper and the page content is very low</xsd:documentation>
+                                 <xsd:documentation xml:lang="en">The contrast between the paper and the page content is very low</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="condition/production-related/document-characteristics/halftoning">
@@ -1890,6 +1891,21 @@ Book</xsd:documentation>
                            <xsd:enumeration value="data-attributes/document-related/visual/columns/two">
                               <xsd:annotation>
                                  <xsd:documentation xml:lang="en">Two-column text</xsd:documentation>
+                              </xsd:annotation>
+                           </xsd:enumeration>
+                           <xsd:enumeration value="data-attributes/document-related/visual/columns/three">
+                              <xsd:annotation>
+                                 <xsd:documentation xml:lang="en">Three-column text</xsd:documentation>
+                              </xsd:annotation>
+                           </xsd:enumeration>
+                           <xsd:enumeration value="data-attributes/document-related/visual/columns/four">
+                              <xsd:annotation>
+                                 <xsd:documentation xml:lang="en">Four-column text</xsd:documentation>
+                              </xsd:annotation>
+                           </xsd:enumeration>
+                           <xsd:enumeration value="data-attributes/document-related/visual/columns/five">
+                              <xsd:annotation>
+                                 <xsd:documentation xml:lang="en">Five-column text</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="data-attributes/document-related/visual/columns/multiple">
