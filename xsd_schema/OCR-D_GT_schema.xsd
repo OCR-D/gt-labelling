@@ -1875,7 +1875,7 @@
                            </xsd:enumeration>
                            <xsd:enumeration value="data-attributes/document-related/visual/text/drop-caps">
                               <xsd:annotation>
-                                 <xsd:documentation xml:lang="en">Drap capitals (large capitals at beginning of paragraph)</xsd:documentation>
+                                 <xsd:documentation xml:lang="en">Drop capitals (large capitals at beginning of paragraph)</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="data-attributes/document-related/visual/columns">
