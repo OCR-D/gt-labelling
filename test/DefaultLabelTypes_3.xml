@@ -193,7 +193,7 @@ Free / paid for</Description>
           <Description>Text represents natural language. 
 
 Examples:
-A news artcile
+A news article
 
 Related:
 </Description>
@@ -226,7 +226,7 @@ Online handwriting</Description>
       </LabelType>
     </LabelType>
     <LabelType caption="Activity Domain" name="activityDomain">
-      <Description>General domain, research field or specific processing strategy of a workflow activty.
+      <Description>General domain, research field or specific processing strategy of a workflow activity.
 
 Examples:
 An activity for automated number plate recognition could be labelled with "OCR" domain.
@@ -333,7 +333,7 @@ OCR</Description>
 
 Examples:
 Stock exchange data in a newspaper,
-Filled in questionaire form
+Filled in questionnaire form
 
 Related:
 OCR
@@ -419,7 +419,7 @@ Text recognition (Visual Computing)</Description>
             <Description>Natural language processing (NLP) is a field of computer science, artificial intelligence, and computational linguistics concerned with the interactions between computers and human (natural) languages. As such, NLP is related to the area of human–computer interaction. Many challenges in NLP involve: natural language understanding, enabling computers to derive meaning from human or natural language input; and others involve natural language generation.
 
 Examples:
-Digitial assistents (e.g. in smartphones)
+Digital assistants (e.g. in smartphones)
 
 Related:
 OCR</Description>
@@ -457,7 +457,7 @@ Examples:
 A simplified form of this is commonly taught to school-age children, in the identification of words as nouns, verbs, adjectives, adverbs, etc.
 
 Related:
-Named entitiy recognition,
+Named entity recognition,
 Tokenisation (as part of Data creation / transformation)</Description>
             </LabelType>
             <LabelType caption="Named entity recognition" name="namedEntities">
@@ -682,7 +682,7 @@ Part-of-speech tagging</Description>
 
 Examples:
 Part-of-speech tagging,
-Named entitiy tagging,
+Named entity tagging,
 Page layout annotation (regions etc.)
 
 Related:
@@ -795,7 +795,7 @@ Licence</Description>
         <Description>Experimental, in development, prototype</Description>
       </LabelType>
       <LabelType caption="Industrial" name="industrial">
-        <Description>Production-strengh method / system that is reliable, tested, and robust</Description>
+        <Description>Production-strength method / system that is reliable, tested, and robust</Description>
       </LabelType>
     </LabelType>
     <LabelType caption="Original Source" name="originalSource">
@@ -819,7 +819,7 @@ Whiteboard writing
 Related:
 Physical production method</Description>
           <LabelType caption="Paper document" name="paper">
-            <Description>The data was orignially produced on paper
+            <Description>The data was originally produced on paper
 
 Example:
 Printed magazine
@@ -993,7 +993,7 @@ Source medium</Description>
       </LabelType>
     </LabelType>
     <LabelType caption="Content of Interest" name="contentOfInterest">
-      <Description>Source / target content. What is the intersting bit in the data at hand.</Description>
+      <Description>Source / target content. What is the interesting bit in the data at hand.</Description>
       <LabelType caption="Visual content" name="visual">
         <LabelType caption="Text" name="text"/>
         <LabelType caption="Graphical" name="graphical">
@@ -1096,7 +1096,7 @@ Book</Description>
       <LabelType caption="Production-related" name="production-related">
         <Description>Conditions introduced during the production of the medium / object</Description>
         <LabelType caption="Document characteristics" name="document-characteristics">
-          <Description>Document-related charactersitics</Description>
+          <Description>Document-related characteristics</Description>
           <LabelType caption="Pasted clippings" name="pasted-clippings">
             <Description>Paper clippings pasted onto a page</Description>
           </LabelType>
@@ -1110,7 +1110,7 @@ Book</Description>
             <Description>The content of a page reaches very close to the page border or even touches it</Description>
           </LabelType>
           <LabelType caption="Low paper-to-content contrast" name="low-contrast">
-            <Description>The contrast bwtween the paper and the page content is very low</Description>
+            <Description>The contrast between the paper and the page content is very low</Description>
           </LabelType>
           <LabelType caption="Halftoning" name="halftoning">
             <Description>Dot-based halftoning printing technique was used (to emulate more colours / grey tones)</Description>
@@ -1283,8 +1283,8 @@ Book</Description>
           </LabelType>
           <LabelType caption="Included other objects" name="included-objects">
             <Description>Foreign objects visible</Description>
-            <LabelType caption="Part of preceeding or succeeding object" name="preceeding-or-proceeding">
-              <Description>Part of preceeding or succeeding object included (e.g. other page)</Description>
+            <LabelType caption="Part of preceding or succeeding object" name="preceding-or-proceeding">
+              <Description>Part of preceding or succeeding object included (e.g. other page)</Description>
             </LabelType>
             <LabelType caption="Medium structure" name="medium-structure">
               <Description>Medium structure visible (e.g. book cover)</Description>

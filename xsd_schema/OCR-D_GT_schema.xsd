@@ -264,7 +264,7 @@
                                  <xsd:documentation xml:lang="en">Text represents natural language. 
 
                                  Examples:
-                                 A news artcile
+                                 A news article
                                  
                                  Related:
                                  </xsd:documentation>
@@ -303,7 +303,7 @@
                            <xsd:enumeration value="content-encoding/mathematical/polygonal"/>
                            <xsd:enumeration value="activityDomain">
                               <xsd:annotation>
-                                 <xsd:documentation xml:lang="en">General domain, research field or specific processing strategy of a workflow activty.
+                                 <xsd:documentation xml:lang="en">General domain, research field or specific processing strategy of a workflow activity.
 
                                     Examples:
                                     An activity for automated number plate recognition could be labelled with "OCR" domain.
@@ -436,7 +436,7 @@
 
                                     Examples:
                                     Stock exchange data in a newspaper,
-                                    Filled in questionaire form
+                                    Filled in questionnaire form
                                     
                                     Related:
                                     OCR
@@ -537,7 +537,7 @@
                                  <xsd:documentation xml:lang="en">Natural language processing (NLP) is a field of computer science, artificial intelligence, and computational linguistics concerned with the interactions between computers and human (natural) languages. As such, NLP is related to the area of human–computer interaction. Many challenges in NLP involve: natural language understanding, enabling computers to derive meaning from human or natural language input; and others involve natural language generation.
 
                                  Examples:
-                                 Digitial assistents (e.g. in smartphones)
+                                 Digital assistants (e.g. in smartphones)
                                  
                                  Related:
                                  OCR</xsd:documentation>
@@ -584,7 +584,7 @@
                                  A simplified form of this is commonly taught to school-age children, in the identification of words as nouns, verbs, adjectives, adverbs, etc.
 
                                  Related:
-                                 Named entitiy recognition,
+                                 Named entity recognition,
                                  Tokenisation (as part of Data creation / transformation)</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
@@ -851,7 +851,7 @@
 
                                  Examples:
                                  Part-of-speech tagging,
-                                 Named entitiy tagging,
+                                 Named entity tagging,
                                  Page layout annotation (regions etc.)
 
                                  Related:
@@ -989,7 +989,7 @@
                            </xsd:enumeration>
                            <xsd:enumeration value="maturity/industrial">
                               <xsd:annotation>
-                                 <xsd:documentation xml:lang="en">Production-strengh method / system that is reliable, tested, and robust</xsd:documentation>
+                                 <xsd:documentation xml:lang="en">Production-strength method / system that is reliable, tested, and robust</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="originalSource">
@@ -1023,7 +1023,7 @@
                            </xsd:enumeration>
                            <xsd:enumeration value="originalSource/produced/physical/paper">
                               <xsd:annotation>
-                                 <xsd:documentation xml:lang="en">The data was orignially produced on paper
+                                 <xsd:documentation xml:lang="en">The data was originally produced on paper
 
                                  Example:
                                  Printed magazine
@@ -1238,7 +1238,7 @@
                            </xsd:enumeration>
                            <xsd:enumeration value="contentOfInterest">
                               <xsd:annotation>
-                                 <xsd:documentation xml:lang="en">Source / target content. What is the intersting bit in the data at hand.</xsd:documentation>
+                                 <xsd:documentation xml:lang="en">Source / target content. What is the interesting bit in the data at hand.</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="contentOfInterest/visual"/>
@@ -1367,7 +1367,7 @@
                            </xsd:enumeration>
                            <xsd:enumeration value="condition/production-related/document-characteristics">
                               <xsd:annotation>
-                                 <xsd:documentation xml:lang="en">Document-related charactersitics</xsd:documentation>
+                                 <xsd:documentation xml:lang="en">Document-related characteristics</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="condition/production-related/document-characteristics/pasted-clippings">
@@ -1677,9 +1677,9 @@
                                  <xsd:documentation xml:lang="en">Foreign objects visible</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
-                           <xsd:enumeration value="condition/acquisition/content-or-background/included-objects/preceeding-or-proceeding">
+                           <xsd:enumeration value="condition/acquisition/content-or-background/included-objects/preceding-or-proceeding">
                               <xsd:annotation>
-                                 <xsd:documentation xml:lang="en">Part of preceeding or succeeding object included (e.g. other page)</xsd:documentation>
+                                 <xsd:documentation xml:lang="en">Part of preceding or succeeding object included (e.g. other page)</xsd:documentation>
                               </xsd:annotation>
                            </xsd:enumeration>
                            <xsd:enumeration value="condition/acquisition/content-or-background/included-objects/medium-structure">
